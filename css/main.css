@@ -1,0 +1,316 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Jost", sans-serif;
+}
+
+.container {
+  max-width: 1111px;
+  margin: 0 auto;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.btn {
+  background-color: rgb(255, 255, 255);
+  padding: 18px 24px;
+  color: rgb(51, 49, 54);
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 1px;
+  border-radius: 10px;
+  font-family: inherit;
+  text-transform: uppercase;
+  outline: none;
+  border: none;
+}
+.btn:hover {
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  background-color: rgb(255, 173, 155);
+}
+
+.design h3 {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 2px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  margin-bottom: 24px;
+}
+.design p {
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 5px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.bg1 {
+  width: 1006px;
+  height: 594px;
+  position: absolute;
+  top: 475px;
+  border-radius: 297px 297px 297px 0;
+  background-color: rgba(241, 243, 245, 0.5);
+  z-index: -1;
+}
+
+.describing h4 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: 5px;
+  text-align: center;
+  color: rgb(51, 49, 54);
+  margin-bottom: 32px;
+}
+.describing p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: rgb(51, 49, 54);
+}
+
+.logo ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 42px;
+}
+.logo ul li {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 2px;
+  color: rgb(51, 49, 54);
+}
+.logo ul li:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-color: rgba(51, 49, 54, 0.349);
+}
+
+header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 64px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 67px;
+}
+
+.Award-winning-section {
+  margin-bottom: 160px;
+  position: relative;
+}
+.Award-winning-section .container {
+  background-image: url("./../images/bg.jpg");
+  padding: 145px 95px;
+  border-radius: 15px;
+}
+.Award-winning-section .container h2 {
+  max-width: 540px;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 48px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 21px;
+}
+.Award-winning-section .container p {
+  max-width: 445px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 40px;
+}
+
+.design-section .container {
+  display: grid;
+  grid-template-areas: "web app" "web graphic";
+  gap: 30px;
+  margin-bottom: 160px;
+}
+.design-section .container .web {
+  grid-area: web;
+  padding: 273px 130px;
+  border-radius: 15px;
+  background-image: url("./../images/laptop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.design-section .container .web:hover {
+  cursor: pointer;
+}
+.design-section .container .web:hover::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 15px;
+  bottom: 0px;
+  left: 0;
+  background: rgba(255, 169, 150, 0.616);
+}
+.design-section .container .app {
+  grid-area: app;
+  padding: 107px 144px;
+  border-radius: 15px;
+  background-image: url("./../images/phone.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.design-section .container .graphic {
+  grid-area: graphic;
+  padding: 107px 87px;
+  border-radius: 15px;
+  background-image: url("./../images/smth.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.describing-section {
+  position: relative;
+}
+.describing-section .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 150px;
+}
+.describing-section .container img {
+  padding: 0 74px;
+  margin-bottom: 48px;
+}
+.describing-section .bg1 {
+  top: 124px;
+  -webkit-transform: rotate(-180deg);
+      -ms-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+  right: 0;
+}
+
+.get-in-touch .container {
+  background-image: url("./../images/intouch-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 72px 95px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: translatey(56px);
+      -ms-transform: translatey(56px);
+          transform: translatey(56px);
+  border-radius: 15px;
+}
+.get-in-touch .container .get h4 {
+  max-width: 300px;
+  font-size: 40px;
+  line-height: 40px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 10px;
+}
+.get-in-touch .container .get p {
+  max-width: 460px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+}
+
+footer {
+  background-color: rgb(29, 28, 30);
+  padding: 144px 0 72px 0;
+}
+footer .container > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.137);
+  margin-bottom: 31px;
+}
+footer .container > div .logo ul li {
+  color: rgb(255, 255, 255);
+}
+footer .container > div .logo ul li:hover {
+  text-decoration-color: rgba(255, 255, 255, 0.568);
+}
+footer .container .second {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+footer .container .second .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+footer .container .second .text div {
+  width: 350px;
+}
+footer .container .second .text div ul li {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  color: rgb(255, 255, 255);
+  opacity: 50%;
+}
+footer .container .second .text div ul li span {
+  font-weight: 400;
+}
+footer .container .second .logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  gap: 14px;
+}
+footer .container .second .logos :hover {
+  cursor: pointer;
+}

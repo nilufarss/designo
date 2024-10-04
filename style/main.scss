@@ -1,0 +1,299 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Jost", sans-serif;
+}
+
+.container {
+  max-width: 1111px;
+  margin: 0 auto;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.btn {
+  background-color: rgba(255, 255, 255, 1);
+  padding: 18px 24px;
+  color: rgba(51, 49, 54, 1);
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 1px;
+  border-radius: 10px;
+  font-family: inherit;
+  text-transform: uppercase;
+  outline: none;
+  border: none;
+  &:hover {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 173, 155, 1);
+  }
+}
+
+.design {
+  h3 {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 2px;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 24px;
+  }
+  p {
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 5px;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+  }
+}
+
+.bg1 {
+  width: 1006px;
+  height: 594px;
+  position: absolute;
+  top: 475px;
+  border-radius: 297px 297px 297px 0;
+  background-color: rgba(241, 243, 245, 0.5);
+  z-index: -1;
+}
+
+.describing {
+  h4 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 5px;
+    text-align: center;
+    color: rgba(51, 49, 54, 1);
+    margin-bottom: 32px;
+  }
+  p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: rgba(51, 49, 54, 1);
+  }
+}
+.logo {
+  ul {
+    display: flex;
+    gap: 42px;
+    li {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 14px;
+      letter-spacing: 2px;
+      color: rgba(51, 49, 54, 1);
+      &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+        text-decoration-color: rgba(51, 49, 54, 0.349);
+      }
+    }
+  }
+}
+
+header {
+  .container {
+    display: flex;
+    padding-top: 64px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 67px;
+  }
+}
+
+.Award-winning-section {
+  margin-bottom: 160px;
+  position: relative;
+  .container {
+    background-image: url("./../images/bg.jpg");
+    padding: 145px 95px;
+    border-radius: 15px;
+    h2 {
+      max-width: 540px;
+      font-weight: 500;
+      font-size: 48px;
+      line-height: 48px;
+      color: rgba(255, 255, 255, 1);
+      margin-bottom: 21px;
+    }
+    p {
+      max-width: 445px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+      color: rgba(255, 255, 255, 1);
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.design-section {
+  .container {
+    display: grid;
+    grid-template-areas:
+      "web app"
+      "web graphic";
+    gap: 30px;
+    margin-bottom: 160px;
+    .web {
+      grid-area: web;
+      padding: 273px 130px;
+      border-radius: 15px;
+      background-image: url("./../images/laptop.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+
+      &:hover {
+        cursor: pointer;
+        &::after {
+          content: "";
+          display: block;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          border-radius: 15px;
+          bottom: -0px;
+          left: 0;
+          background: rgba(255, 169, 150, 0.616);
+        }
+      }
+    }
+    .app {
+      grid-area: app;
+      // max-width: 541px;
+      padding: 107px 144px;
+      border-radius: 15px;
+      background-image: url("./../images/phone.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .graphic {
+      grid-area: graphic;
+      padding: 107px 87px;
+      border-radius: 15px;
+      background-image: url("./../images/smth.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+}
+
+.describing-section {
+  position: relative;
+  .container {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 150px;
+    img {
+      padding: 0 74px;
+      margin-bottom: 48px;
+    }
+  }
+  .bg1 {
+    top: 124px;
+    transform: rotate(-180deg);
+    right: 0;
+  }
+}
+
+.get-in-touch {
+  .container {
+    background-image: url("./../images/intouch-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 72px 95px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: translatey(56px);
+    border-radius: 15px;
+    .get {
+      h4 {
+        max-width: 300px;
+        font-size: 40px;
+        line-height: 40px;
+        color: rgba(255, 255, 255, 1);
+        margin-bottom: 10px;
+      }
+      p {
+        max-width: 460px;
+        text-align: left;
+        color: rgba(255, 255, 255, 1);
+      }
+    }
+  }
+}
+
+footer {
+  background-color: rgba(29, 28, 30, 1);
+  padding: 144px 0 72px 0;
+  .container {
+    & > div {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 40px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.137);
+      margin-bottom: 31px;
+      .logo {
+        ul {
+          li {
+            color: rgba(255, 255, 255, 1);
+            &:hover {
+              text-decoration-color: rgba(255, 255, 255, 0.568);
+            }
+          }
+        }
+      }
+    }
+    .second {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      border: none;
+      margin: 0;
+      padding: 0;
+      .text {
+        display: flex;
+        gap: 30px;
+        div {
+          width: 350px;
+          ul {
+            li {
+              font-weight: 700;
+              font-size: 16px;
+              line-height: 26px;
+              color: rgba(255, 255, 255, 1);
+              opacity: 50%;
+              span {
+                font-weight: 400;
+              }
+            }
+          }
+        }
+      }
+      .logos {
+        display: flex;
+        align-items: end;
+        gap: 14px;
+        :hover{
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
